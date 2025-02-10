@@ -1,0 +1,31 @@
+
+username = input(f"{Fore.YELLOW}Nhập Username: {Fore.RESET}")
+nd = input(f"{Fore.CYAN}Nhập Nội Dung: {Fore.RESET}").replace(" ", " ")
+so_lan = int(input(f"{Fore.GREEN}Nhập số lần gửi: {Fore.RESET}"))
+
+url = "https://ngl.link/api/submit"
+headers = {
+    "accept": "*/*",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "user-agent": "Mozilla/5.0",
+    "origin": "https://ngl.link",
+    "referer": f"https://ngl.link/{username}"
+}
+
+for i in range(so_lan):
+    data = {
+        "username": username,
+        "question": nd,
+        "deviceId": str(uuid.uuid4()),
+        "gameSlug": "",
+        "referrer": ""
+    }
+    response = requests.post(url, headers=headers, data=data)
+    
+    if response.status_code == 200 and "questionId" in response.json():
+        print(f"{Fore.GREEN}Đã gửi {Fore.YELLOW}{i + 1} {Fore.CYAN}lần {Fore.MAGENTA}Nội Dung: '{nd}' {Fore.WHITE}Đến: '{username}' {Fore.GREEN}Trạng Thái: Thành Công {Fore.RESET}")
+    elif "Could not find user" in response.text:
+        print(f"{Fore.RED}Username Sai Hoặc Không Hợp Lệ!{Fore.RESET}")
+        break
+    else:
+        print(f"{Fore.GREEN}Đã gửi {Fore.YELLOW}{i + 1} {Fore.CYAN}lần {Fore.MAGENTA}Nội Dung: '{nd}' {Fore.WHITE}Đến: '{username}' {Fore.GREEN}Trạng Thái: {Fore.RED} Thất Bại{Fore.RESET}")
