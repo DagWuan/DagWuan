@@ -58,7 +58,7 @@ def banner():
 
 os.system("cls" if os.name == "nt" else "clear")
 banner()
-\033[97m────────────────────────────────────────────────────────────
+print (Colorate.Diagonal(Colors.blue_to_red, "────────────────────────────────────────────────────────────"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╔═════════════════════╗"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "║  Tool Trao Đổi Sub  ║"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╚═════════════════════╝"))
@@ -69,14 +69,14 @@ print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m1.4\033[1;31m] \033[1;32mTDS INSTAGRAM")
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m1.5\033[1;31m] \033[1;32mTOOL ĐỔI MK TĐS")
 
-print (Colorate.Diagonal(Colors.blue_to_red,"────────────────────────────────────────────────────────────"))
+print (Colorate.Diagonal(Colors.blue_to_red, "────────────────────────────────────────────────────────────"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╔═════════════════════╗"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "║  Tool Spam Sms      ║"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╚═════════════════════╝"))
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m2.1\033[1;31m] \033[1;32mTOOL SPAM SMS \033[1;33m[\033[1;31mV1\033[1;33m] ")
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m2.2\033[1;31m] \033[1;32mTOOL SPAM SMS \033[1;33m[\033[1;31mV2\033[1;33m] ")
 
-print (Colorate.Diagonal(Colors.blue_to_red,"────────────────────────────────────────────────────────────"))
+print (Colorate.Diagonal(Colors.blue_to_red, "────────────────────────────────────────────────────────────"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╔═════════════════════╗"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "║  Tool Đào Mail      ║"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╚═════════════════════╝"))
@@ -86,7 +86,7 @@ print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m3.4\033[1;31m] \033[1;32mTOOL CHECK VALID")
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m3.5\033[1;31m] \033[1;32mTOOL REG ACC GARENA")
 
-print (Colorate.Diagonal(Colors.blue_to_red,"────────────────────────────────────────────────────────────"))
+print (Colorate.Diagonal(Colors.blue_to_red, "────────────────────────────────────────────────────────────"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╔═════════════════════════╗"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "║Tool Đào & Check Proxies ║"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╚═════════════════════════╝"))
@@ -99,7 +99,7 @@ print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m4.7\033[1;31m] \033[1;32mTOOL ĐÀO PROXY \033[1;33m[\033[1;31mV4\033[1;33m] ")
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m4.8\033[1;31m] \033[1;32mTOOL ĐÀO PROXY \033[1;33m[\033[1;31mV5 VIP\033[1;33m] ")
 
-print (Colorate.Diagonal(Colors.blue_to_red,"────────────────────────────────────────────────────────────"))
+print (Colorate.Diagonal(Colors.blue_to_red, "────────────────────────────────────────────────────────────"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╔═════════════════════════╗"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "║Tool Encode & Dec        ║"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╚═════════════════════════╝"))
@@ -111,7 +111,7 @@ print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m5.6\033[1;31m] \033[1;32mTOOL ENCODE EMOJI")
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m5.7\033[1;31m] \033[1;32mTOOL ENCODE EJULY-DUYKHANH")
 
-print (Colorate.Diagonal(Colors.blue_to_red,"────────────────────────────────────────────────────────────"))
+print (Colorate.Diagonal(Colors.blue_to_red, "────────────────────────────────────────────────────────────"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╔═════════════════════════╗"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "║Tool Aotu Golike         ║"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╚═════════════════════════╝"))
@@ -119,7 +119,7 @@ print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m6.2\033[1;31m] \033[1;32mTool Auto Instagram ")
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m6.3\033[1;31m] \033[1;32mTool Auto Twitter")
 
-print (Colorate.Diagonal(Colors.blue_to_red,"────────────────────────────────────────────────────────────"))
+print (Colorate.Diagonal(Colors.blue_to_red, "────────────────────────────────────────────────────────────"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╔═════════════════════════╗"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "║Tool Của Các Idol Khác   ║"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╚═════════════════════════╝"))
@@ -131,7 +131,7 @@ print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m7.6\033[1;31m] \033[1;32mTOOL JIRAY TOOL")
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m7.7\033[1;31m] \033[1;32mTOOL BETA TOOL")
 
-print (Colorate.Diagonal(Colors.blue_to_red,"────────────────────────────────────────────────────────────"))
+print (Colorate.Diagonal(Colors.blue_to_red, "────────────────────────────────────────────────────────────"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╔════════════════╗"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "║Tool Tiện ích   ║"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╚════════════════╝"))
@@ -143,14 +143,14 @@ print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m8.6\033[1;31m] \033[1;32mTOOL REG ACC FACEBOOK")
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m8.7\033[1;31m] \033[1;32mTOOL SPAM NGL")
 
-print (Colorate.Diagonal(Colors.blue_to_red,"────────────────────────────────────────────────────────────"))
+print (Colorate.Diagonal(Colors.blue_to_red, "────────────────────────────────────────────────────────────"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╔════════════════╗"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "║Tool New Update ║"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╚════════════════╝"))
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m9.1\033[1;31m] \033[1;32mTool máy tính")
 print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;31m[\033[1;33m00\033[1;31m] \033[1;32mTHOÁT TOOL")
 
-print (Colorate.Diagonal(Colors.blue_to_red,"────────────────────────────────────────────────────────────"))
+print (Colorate.Diagonal(Colors.blue_to_red, "────────────────────────────────────────────────────────────"))
 
 chon = str(input('\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;37m: \033[1;33m'))
 
