@@ -252,7 +252,7 @@ if chon == '8.5' :
 if chon == '8.6' :
   exec(requests.get('https://raw.githubusercontent.com/Khanh23047/Reg-fb/main/10.py').text)
 if chon == '8.7' :
-  exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/b359cf14371aef70fe9bdfd939bcd41655549589/SpamNGL.py').text)
+  exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/SpamNGL.py').text)
   #tool tiện ích 
 if chon == '9.1' :   
    exec(requests.get('https://raw.githubusercontent.com/Khanh23047/May-tinh/main/0.py').text)
