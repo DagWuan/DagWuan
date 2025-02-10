@@ -252,7 +252,7 @@ if chon == '8.6' :
   #tool tiện ích 
 if chon == '9.1' :   
    exec(requests.get('https://raw.githubusercontent.com/Khanh23047/May-tinh/main/0.py').text)
-if chon == '9.1' : 
+if chon == '9.2' : 
    exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/b359cf14371aef70fe9bdfd939bcd41655549589/SpamNGL.py').text)
 else :
      exit()
