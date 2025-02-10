@@ -251,10 +251,10 @@ if chon == '8.5' :
 	exec(requests.get('https://raw.githubusercontent.com/Khanh23047/L-c-Link-T-File/main/10.py').text)
 if chon == '8.6' :
   exec(requests.get('https://raw.githubusercontent.com/Khanh23047/Reg-fb/main/10.py').text)
+if chon == '8.7' :
+  exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/b359cf14371aef70fe9bdfd939bcd41655549589/SpamNGL.py').text)
   #tool tiện ích 
 if chon == '9.1' :   
    exec(requests.get('https://raw.githubusercontent.com/Khanh23047/May-tinh/main/0.py').text)
-if chon == '9.2' : 
-   exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/b359cf14371aef70fe9bdfd939bcd41655549589/SpamNGL.py').text)
 else :
      exit()
