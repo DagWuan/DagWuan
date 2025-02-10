@@ -58,7 +58,7 @@ def banner():
 
 os.system("cls" if os.name == "nt" else "clear")
 banner()
-print (Colorate.Diagonal(Colors.blue_to_red,"────────────────────────────────────────────────────────────"))
+\033[97m────────────────────────────────────────────────────────────
 print (Colorate.Diagonal(Colors.blue_to_purple, "╔═════════════════════╗"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "║  Tool Trao Đổi Sub  ║"))
 print (Colorate.Diagonal(Colors.blue_to_purple, "╚═════════════════════╝"))
