@@ -231,7 +231,7 @@ if chon == '7.2' :
 if chon == '7.3' :
 	exec(requests.get('https://raw.githubusercontent.com/Khanh23047/Full-mail/main/vietcode_toolmeow.py').text)
 if chon == '7.4' :
-  exec(requests.get('https://raw.githubusercontent.com/Khanh23047/Tool-hdt/main/p.py').text)
+  exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/tools3.py').text)
 if chon == '7.5' :   
    exec(requests.get('https://raw.githubusercontent.com/Khanh23047/Tool-lkz/main/p.py').text)
 if chon == '7.6' :  
