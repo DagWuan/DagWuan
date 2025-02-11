@@ -96,7 +96,7 @@ banner = r'''
 ╚═════╝░╚═╝░░╚═╝░╚═════╝░░░░╚═╝░░░╚═╝░░░╚═════╝░╚═╝░░╚═╝╚═╝░░╚══╝
 
                          YTB: DagWuan Share Tools
-              Facebook: https://www.facebook.com/DagWuan185
+              
 '''
 gach  = '========================================='
 option = f'''{gach}{Colors.green}
