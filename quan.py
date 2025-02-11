@@ -159,7 +159,7 @@ if chon == '00' :
     exec(requests.get('https://raw.githubusercontent.com/Khanh23047/thoattool/main/.github/workflows/main.yml').text)
     #tool tđs
 if chon == '1.1' :
-    exec(requests.get('https://raw.githubusercontent.com/Khanh23047/TDS-TIKTOK-V1/main/tool.py').text)
+    exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/Tools6.py').text)
 if chon == '1.2':
     exec(requests.get('https://raw.githubusercontent.com/Khanh23047/Tdstikv2/main/00.py').text)
 if chon == '1.3' :
