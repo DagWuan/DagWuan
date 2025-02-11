@@ -15,9 +15,9 @@ banner = f"""
 \033[1;32m\033[1m██████╔╝██║░░██║╚██████╔╝░░╚██╔╝░╚██╔╝░╚██████╔╝██║░░██║██║░╚███║
 \033[1;32m\033[1m╚═════╝░╚═╝░░╚═╝░╚═════╝░░░░╚═╝░░░╚═╝░░░╚═════╝░╚═╝░░╚═╝╚═╝░░╚══╝
  
-               BOX ZALO: https://zalo.me/g/nguadz335
-               ADMIN : DUY KHÁNH 
-               YTB : REVIEWTOOL247NDK
+               Facebook: https://www.facebook.com/DagWuan185
+               ADMIN : Đăng Quân 
+               YTB : DagWuan share tools
 \033[1;97m= = = = = = = = = = = = = = = = = = = = = = = = = = = = = """
 os.system('cls' if os.name == 'nt' else 'clear')
 print(banner)
