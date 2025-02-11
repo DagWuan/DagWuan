@@ -244,11 +244,11 @@ if chon == '8.1' :
 if chon == '8.2' :
      exec(requests.get('https://raw.githubusercontent.com/Khanh23047/Reg-pro5-vip/main/reg.py').text)
 if chon == '8.3' :
-    exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/Tools2.py').text)
+    exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/Tools1.py').text)
 if chon == '8.4' :
     exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/Phanhoi.py').text)
 if chon == '8.5' :
-	exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/Tools1.py').text)
+	exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/Tools2.py').text)
 if chon == '8.6' :
   exec(requests.get('https://raw.githubusercontent.com/Khanh23047/Reg-fb/main/10.py').text)
 if chon == '8.7' :
