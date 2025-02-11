@@ -248,7 +248,7 @@ if chon == '8.3' :
 if chon == '8.4' :
     exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/Phanhoi.py').text)
 if chon == '8.5' :
-	exec(requests.get('https://raw.githubusercontent.com/Khanh23047/L-c-Link-T-File/main/10.py').text)
+	exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/Tools1.py').text)
 if chon == '8.6' :
   exec(requests.get('https://raw.githubusercontent.com/Khanh23047/Reg-fb/main/10.py').text)
 if chon == '8.7' :
