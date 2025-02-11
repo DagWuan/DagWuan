@@ -23,7 +23,7 @@ os.system('cls' if os.name == 'nt' else 'clear')
 print(banner)
 
 def shorten_link(url):
-    token = "6648c8f016f35d42cd052655"
+    token = "679e1efb13055f3d4e6e088f"
     api_url = f"https://link4m.co/api-shorten/v2?api={token}&url={url}"
 
     response = requests.get(api_url)
