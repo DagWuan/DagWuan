@@ -242,7 +242,7 @@ if chon == '7.7' :
 if chon == '8.1' :
     exec(requests.get('https://raw.githubusercontent.com/Khanh23047/DOSS-WEB/main/dos.py').text)
 if chon == '8.2' :
-     exec(requests.get('https://raw.githubusercontent.com/Khanh23047/Reg-pro5-vip/main/reg.py').text)
+     exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/Tools4.py').text)
 if chon == '8.3' :
     exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/Tools1.py').text)
 if chon == '8.4' :
