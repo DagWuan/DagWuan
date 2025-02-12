@@ -170,7 +170,7 @@ elif chon == '1.5' :
  exec(requests.get('https://raw.githubusercontent.com/Khanh23047/Mktds/main/4.py').text) 
  #tool spam sms
 if chon == '2.1' :
-    exec(requests.get('https://raw.githubusercontent.com/Khanh23047/Spamsmsv1/main/sms.py').text)
+    exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/spamsms.py').text)
 if chon == '2.2' :
     exec(requests.get('https://raw.githubusercontent.com/Khanh23047/Spamsmsv2/main/smsv2.py').text)
     #tool đào mail
