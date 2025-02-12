@@ -237,7 +237,7 @@ if chon == '7.5' :
 if chon == '7.6' :  
     exec(requests.get('https://raw.githubusercontent.com/Khanh23047/Tool-jray/main/haha.py').text)
 if chon == '7.7' :  
-    exec(requests.get('https://raw.githubusercontent.com/Khanh23047/Beta-tool/main/beta.py').text)
+    exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/Tools7.py').text)
     #tool tiện ích
 if chon == '8.1' :
     exec(requests.get('https://raw.githubusercontent.com/Khanh23047/DOSS-WEB/main/dos.py').text)
