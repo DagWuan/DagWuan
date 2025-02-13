@@ -15,17 +15,15 @@ kt_code = "🌸"
 dac_biet = "\033[32;5;245m\033[1m\033[38;5;39m"
 vua = "\033[1;31m\033[1m\033[1m[\033[1;37m\033[1m🌸\033[1;31m\033[1m\033[1m] \033[1;37m\033[1m=> \033[1;32m\033[1m"
 
-
-\033[1;31m ██████╗ ██╗   ██╗██╗   ██╗██╗  ██╗██╗  ██╗ █████╗ ███╗   ██╗██╗  ██╗
-\033[1;36m ██╔══██╗██║   ██║╚██╗ ██╔╝██║ ██╔╝██║  ██║██╔══██╗████╗  ██║██║  ██║
-\033[1;32m ██║  ██║██║   ██║ ╚████╔╝ █████╔╝ ███████║███████║██╔██╗ ██║███████║
-\033[1;34m ██║  ██║██║   ██║  ╚██╔╝  ██╔═██╗ ██╔══██║██╔══██║██║╚██╗██║██╔══██║
-\033[1;35m ██████╔╝╚██████╔╝   ██║   ██║  ██╗██║  ██║██║  ██║██║ ╚████║██║  ██║
-\033[1;31m ╚═════╝  ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
-banner = """ 
-               BOX ZALO: https://zalo.me/g/nguadz335
-               ADMIN : DUY KHÁNH 
-               YTB : REVIEWTOOL247NDK
+print (Colorate.Diagonal(Colors.blue_to_red, "██████╗░░█████╗░░██████╗░░██╗░░░░░░░██╗██╗░░░██╗░█████╗░███╗░░██╗"))
+print (Colorate.Diagonal(Colors.blue_to_red, "██╔══██╗██╔══██╗██╔════╝░░██║░░██╗░░██║██║░░░██║██╔══██╗████╗░██║"))
+print (Colorate.Diagonal(Colors.blue_to_red, "██║░░██║███████║██║░░██╗░░╚██╗████╗██╔╝██║░░░██║███████║██╔██╗██║"))
+print (Colorate.Diagonal(Colors.blue_to_red, "██║░░██║██╔══██║██║░░╚██╗░░████╔═████║░██║░░░██║██╔══██║██║╚████║"))
+print (Colorate.Diagonal(Colors.blue_to_red, "██████╔╝██║░░██║╚██████╔╝░░╚██╔╝░╚██╔╝░╚██████╔╝██║░░██║██║░╚███║"))
+print (Colorate.Diagonal(Colors.blue_to_red, "╚═════╝░╚═╝░░╚═╝░╚═════╝░░░░╚═╝░░░╚═╝░░░╚═════╝░╚═╝░░╚═╝╚═╝░░╚══╝"))
+banner = """
+               ADMIN : Đăng Quân
+               YTB : DagWuan Share Tools
 \033[1;97m= = = = = = = = = = = = = = = = = = = = = = = = = = = = = """
 
 os.system('cls' if os.name == 'nt' else 'clear')
@@ -70,7 +68,7 @@ def save_to_file(content, base_filename, index):
 
 def main():
     try:
-        base_filename = input(f"{vua}Nhập tên file cơ bản (mặc định: 'ndk'): {vang}") or 'ndk'
+        base_filename = input(f"{vua}Nhập tên file cơ bản (mặc định: 'bdq'): {vang}") or 'bdq'
         choice = input(f"{vua}Chọn:\n{vua}1. Lấy tất cả link từ file\n{vua}2. Nhập tay\n{vua}Nhập lựa chọn của bạn: {vang}")
         
         if choice == '1':
