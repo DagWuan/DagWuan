@@ -26,14 +26,14 @@ def thanhngang(so):
 
 def banner():
     os.system('cls' if os.name=='nt' else 'clear')
-    print(f'''           {luc}© Bản Quyền DHP07 ! Tool VIPBRO !!!
-          
-        {red}██████╗ ██╗  ██╗██████╗  ██████╗ ███████╗
-        {trang}██╔══██╗██║  ██║██╔══██╗██╔═████╗╚════██║
-        {red}██║  ██║███████║██████╔╝██║██╔██║    ██╔╝
-        {trang}██║  ██║██╔══██║██╔═══╝ ████╔╝██║   ██╔╝ 
-        {red}██████╔╝██║  ██║██║     ╚██████╔╝   ██║  
-        {trang}╚═════╝ ╚═╝  ╚═╝╚═╝      ╚═════╝    ╚═╝  ''')
+    print(f'''           {luc}© Bản Quyền BDQ09 ! Tool VIPBRO !!!
+                    
+           {red}   ██████╗ ██████╗  ██████╗  █████╗  █████╗  
+           {trang}   ██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██╔══██╗ 
+           {red}   ██████╦╝██║  ██║██║██╗██║██║  ██║╚██████║ 
+             {trang} ██╔══██╗██║  ██║╚██████╔╝██║  ██║ ╚═══██║ 
+           {red}   ██████╦╝██████╔╝ ╚═██╔═╝ ╚█████╔╝ █████╔╝ 
+             {trang} ╚═════╝ ╚═════╝   ╚═╝     ╚════╝  ╚════╝    ''')
     thanhngang(65)
     print(f'''{thanh} {luc}Admin{trang}: {vang}Đàm Hữu Phước
 {thanh} {luc}Box Zalo{trang}: {red}https://zalo.me/g/ixhzva608
