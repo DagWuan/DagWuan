@@ -35,7 +35,7 @@ def banner():
            {red}   ██████╦╝██████╔╝ ╚═██╔═╝ ╚█████╔╝ █████╔╝ 
              {trang} ╚═════╝ ╚═════╝   ╚═╝     ╚════╝  ╚════╝    ''')
     thanhngang(65)
-    print(f'''{thanh} {luc}Admin{trang}: {vang}Đàm Hữu Phước
+    print(f'''{thanh} {luc}Admin{trang}: {vang}Bùi Đăng Quân
 {thanh} {luc}Box Zalo{trang}: {red}Comming Soon
 {thanh} {luc}Web Bán Key{trang}: {red}Comming Soon
 {thanh} {luc}Web DVMXH{trang}: {red}Comming Soon
