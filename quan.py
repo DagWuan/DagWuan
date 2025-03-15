@@ -72,7 +72,7 @@ while True:
         exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/Tool1.py').text)
         break
     elif chon == '2':
-        exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/dhp.py').text)
+        exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/tdsv.py').text)
         break
     else:
         print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;31mLựa chọn không hợp lệ, vui lòng nhập lại số 1 hoặc 2.\033[1;37m")
