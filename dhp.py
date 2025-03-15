@@ -36,25 +36,25 @@ def banner():
              {trang} ╚═════╝ ╚═════╝   ╚═╝     ╚════╝  ╚════╝    ''')
     thanhngang(65)
     print(f'''{thanh} {luc}Admin{trang}: {vang}Đàm Hữu Phước
-{thanh} {luc}Box Zalo{trang}: {red}https://zalo.me/g/ixhzva608
-{thanh} {luc}Web Bán Key{trang}: {red}https://dhphuoc21.x10.mx/
-{thanh} {luc}Web DVMXH{trang}: {red}https://sharegiare.xyz
-{thanh} {luc}Web Thu Xu{trang}: {red}https://thucoin.com/
+{thanh} {luc}Box Zalo{trang}: {red}Comming Soon
+{thanh} {luc}Web Bán Key{trang}: {red}Comming Soon
+{thanh} {luc}Web DVMXH{trang}: {red}Comming Soon
+{thanh} {luc}Web Thu Xu{trang}: {red}Comming Soon
 {thanh} {luc}Bạn Đang Sử Dụng Tool{trang}: {vang}Trao Đổi Sub Facebook VIP''')
     thanhngang(65)
 
 def Delay(value):
 	while not(value <= 1):
 		value -= 0.123
-		print(f'''{trang}[{lam}DHP07{trang}] [{lam}DELAY{trang}] [{lam}{str(value)[0:5]}{trang}] [{vang}X    {trang}]''', '               ', end = '\r')
+		print(f'''{trang}[{lam}BDQ09{trang}] [{lam}DELAY{trang}] [{lam}{str(value)[0:5]}{trang}] [{vang}X    {trang}]''', '               ', end = '\r')
 		sleep(0)
-		print(f'''{trang}[{lam}DHP07{trang}] [{lam}DELAY{trang}] [{lam}{str(value)[0:5]}{trang}] [ {vang}X   {trang}]''', '               ', end = '\r')
+		print(f'''{trang}[{lam}BDQ09{trang}] [{lam}DELAY{trang}] [{lam}{str(value)[0:5]}{trang}] [ {vang}X   {trang}]''', '               ', end = '\r')
 		sleep(0)
-		print(f'''{trang}[{lam}DHP07{trang}] [{lam}DELAY{trang}] [{lam}{str(value)[0:5]}{trang}] [  {vang}X  {trang}]''', '               ', end = '\r')
+		print(f'''{trang}[{lam}BDQ09{trang}] [{lam}DELAY{trang}] [{lam}{str(value)[0:5]}{trang}] [  {vang}X  {trang}]''', '               ', end = '\r')
 		sleep(0)
-		print(f'''{trang}[{lam}DHP07{trang}] [{lam}DELAY{trang}] [{lam}{str(value)[0:5]}{trang}] [   {vang}X {trang}]''', '               ', end = '\r')
+		print(f'''{trang}[{lam}BDQ09{trang}] [{lam}DELAY{trang}] [{lam}{str(value)[0:5]}{trang}] [   {vang}X {trang}]''', '               ', end = '\r')
 		sleep(0)
-		print(f'''{trang}[{lam}DHP07{trang}] [{lam}DELAY{trang}] [{lam}{str(value)[0:5]}{trang}] [    {vang}X{trang}]''', '               ', end = '\r')
+		print(f'''{trang}[{lam}BDQ09{trang}] [{lam}DELAY{trang}] [{lam}{str(value)[0:5]}{trang}] [    {vang}X{trang}]''', '               ', end = '\r')
 		sleep(0)
 
 def decode_base64(encoded_str):
