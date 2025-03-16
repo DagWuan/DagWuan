@@ -7,18 +7,9 @@ import requests
 from pystyle import Colors, Colorate
 
 # Các màu sắc
-xnhac = "\033[1;36m"
 do = "\033[1;31m"
 luc = "\033[1;32m"
-vang = "\033[1;33m"
-xduong = "\033[1;34m"
-tim = '\033[1;39m'
-hong = "\033[1;35m"
 trang = "\033[1;37m"
-whiteb = "\033[1;37m"
-red = "\033[0;31m"
-redb = "\033[1;31m"
-end = '\033[0m'
 
 KEY_FILE = "key_data.json"
 
@@ -30,17 +21,14 @@ def banner():
     banner = f"""
                   {luc}© Bản Quyền BDQ09 ! Tool VIPBRO !!!
                     
-           {red}   ██████╗ ██████╗  ██████╗  █████╗  █████╗  
+           {do}   ██████╗ ██████╗  ██████╗  █████╗  █████╗  
              {trang} ██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██╔══██╗ 
-           {red}   ██████╦╝██║  ██║██║██╗██║██║  ██║╚██████║ 
+           {do}   ██████╦╝██║  ██║██║██╗██║██║  ██║╚██████║ 
              {trang} ██╔══██╗██║  ██║╚██████╔╝██║  ██║ ╚═══██║ 
-           {red}   ██████╦╝██████╔╝ ╚═██╔═╝ ╚█████╔╝ █████╔╝ 
+           {do}   ██████╦╝██████╔╝ ╚═██╔═╝ ╚█████╔╝ █████╔╝ 
              {trang} ╚═════╝ ╚═════╝   ╚═╝     ╚════╝  ╚════╝  
 """
-    for X in banner:
-        sys.stdout.write(X)
-        sys.stdout.flush()
-        time.sleep(0.00125)
+    print(banner)
 
 # Lưu key vào file
 def save_key(key, expiration):
@@ -78,8 +66,8 @@ def check_saved_key():
 ║ {trang}=> Trạng Thái Key: Đang Hoạt Động{luc}  ║
 ╚════════════════════════════════════╝
 """)
-        return True
-    return False
+        return key
+    return None
 
 # Hiển thị menu chọn tool
 def show_tool_options():
@@ -103,28 +91,25 @@ def execute_remote_script(url):
         print(f"\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;31mLỗi khi tải mã từ URL: {e}")
         sys.exit(1)
 
-# Yêu cầu nhập key mới nếu cần
-def enter_key():
-    while True:
-        key = input("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37mNhập key của bạn: \033[1;33m")
-        
-        if key.startswith("BDQ_"):  # Kiểm tra định dạng key hợp lệ
-            expiration_date = datetime.now() + timedelta(hours=12)  # Key có hạn 12 tiếng
-            save_key(key, expiration_date)
-            print("\033[1;32m✔ Key hợp lệ! Bạn có thể sử dụng tool.")
-            break
-        else:
-            print("\033[1;31m✘ Key không hợp lệ, vui lòng nhập lại.")
-
 # Main function
 def main():
     os.system("cls" if os.name == "nt" else "clear")
     banner()
-    
-    # Kiểm tra key đã lưu, nếu hợp lệ thì bỏ qua nhập key
-    if not check_saved_key():
-        enter_key()
 
+    # Kiểm tra nếu đã có key hợp lệ, bỏ qua nhập key
+    key = check_saved_key()
+    if not key:
+        while True:
+            key = input("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37mNhập key của bạn: \033[1;33m")
+            
+            if key.startswith("BDQ_"):  # Kiểm tra định dạng key hợp lệ
+                expiration_date = datetime.now() + timedelta(hours=12)  # Key có hạn 12 tiếng
+                save_key(key, expiration_date)
+                print("\033[1;32m✔ Key hợp lệ! Bạn có thể sử dụng tool.")
+                break
+            else:
+                print("\033[1;31m✘ Key không hợp lệ, vui lòng nhập lại.")
+    
     show_tool_options()
 
     while True:
