@@ -41,33 +41,7 @@ def banner():
         sys.stdout.write(X)
         sys.stdout.flush()
         time.sleep(0.00125)
-
-# Kiểm tra tính hợp lệ của key
-def check_key_validity(key):
-    # Giả sử bạn có danh sách các khóa hợp lệ
-    valid_keys = ["KEY123", "KEY456", "VIPTOOL2025"]
-    return key in valid_keys
-
-remaining_time = None  # Đặt giá trị mặc định cho remaining_time
-def enter_key():
-    global remaining_time  # Sử dụng biến toàn cục remaining_time
-    while True:
-        key = input(f"\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập Key Để Sử Dụng Tool: \033[1;33m")
         
-        # Kiểm tra tính hợp lệ của key
-        if check_key_validity(key):
-            print(f"\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mKey hợp lệ! \033[1;37mBạn có thể tiếp tục sử dụng tool.")
-            
-            # Tính thời gian hết hạn key (ví dụ: key có hiệu lực trong 24 giờ)
-            expiration_time = (datetime.now() + timedelta(days=1))
-            remaining_time = expiration_time - datetime.now()  # Tính thời gian còn lại
-
-            # Ẩn key
-            print(f"\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;35mThời gian còn lại của Key: \033[1;32m{remaining_time}")
-            break
-        else:
-            print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;31mKey không hợp lệ! Vui lòng nhập lại.")
-
 # Hiển thị lựa chọn tool
 def show_tool_options():
     print (Colorate.Diagonal(Colors.blue_to_red, "────────────────────────────────────────────────────────────"))
