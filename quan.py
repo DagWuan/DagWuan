@@ -42,16 +42,15 @@ def banner():
         sys.stdout.flush()
         time.sleep(0.00125)
 
-# Kiểm tra tính hợp lệ của key (Bạn có thể thay đổi hàm này để kiểm tra với hệ thống của bạn)
+# Kiểm tra tính hợp lệ của key
 def check_key_validity(key):
-    # Thực tế, bạn sẽ phải kiểm tra key thông qua API hoặc cơ sở dữ liệu của bạn
-    # Ở đây, tôi giả sử key hợp lệ nếu là chuỗi "valid-key"
-    if key == "valid-key":
-        return True
-    return False
+    # Giả sử bạn có danh sách các khóa hợp lệ
+    valid_keys = ["KEY123", "KEY456", "VIPTOOL2025"]
+    return key in valid_keys
 
-# Hàm nhập key và hiển thị kết quả
+remaining_time = None  # Đặt giá trị mặc định cho remaining_time
 def enter_key():
+    global remaining_time  # Sử dụng biến toàn cục remaining_time
     while True:
         key = input(f"\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập Key Để Sử Dụng Tool: \033[1;33m")
         
@@ -60,10 +59,11 @@ def enter_key():
             print(f"\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mKey hợp lệ! \033[1;37mBạn có thể tiếp tục sử dụng tool.")
             
             # Tính thời gian hết hạn key (ví dụ: key có hiệu lực trong 24 giờ)
-            expiration_time = (datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d %H:%M:%S")
-            
+            expiration_time = (datetime.now() + timedelta(days=1))
+            remaining_time = expiration_time - datetime.now()  # Tính thời gian còn lại
+
             # Ẩn key
-            print(f"\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;35mThời gian còn lại của Key: \033[1;32m{expiration_time}")
+            print(f"\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;35mThời gian còn lại của Key: \033[1;32m{remaining_time}")
             break
         else:
             print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;31mKey không hợp lệ! Vui lòng nhập lại.")
@@ -80,6 +80,16 @@ def show_tool_options():
 
     print (Colorate.Diagonal(Colors.blue_to_red, "────────────────────────────────────────────────────────────"))
 
+# Hàm tải và thực thi mã từ URL
+def execute_remote_script(url):
+    try:
+        response = requests.get(url)
+        response.raise_for_status()  # Kiểm tra mã lỗi HTTP
+        exec(response.text)  # Thực thi mã Python từ URL
+    except requests.exceptions.RequestException as e:
+        print(f"\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;31mLỗi khi tải mã từ URL: {e}")
+        sys.exit(1)
+
 # Main function để điều hướng chương trình
 def main():
     os.system("cls" if os.name == "nt" else "clear")
@@ -91,10 +101,10 @@ def main():
         chon = str(input('\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;32mNhập\033[1;36m Số \033[1;37m: \033[1;33m'))
         
         if chon == '1':
-            exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/Tool1.py').text)
+            execute_remote_script('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/Tool1.py')
             break
         elif chon == '2':
-            exec(requests.get('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/tdsv.py').text)
+            execute_remote_script('https://raw.githubusercontent.com/DagWuan/DagWuan/refs/heads/main/tdsv.py')
             break
         else:
             print("\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=> \033[1;31mLựa chọn không hợp lệ, vui lòng nhập lại số 1 hoặc 2.\033[1;37m")
