@@ -9,7 +9,7 @@ from pystyle import Colors, Colorate
 # Các màu sắc
 do = "\033[1;31m"
 luc = "\033[1;32m"
-xanhla= "\033[1;32m"
+xanhla = "\033[1;32m"
 trang = "\033[1;37m"
 ndp_tool = "\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=>  "
 thanh = "\033[1;37m- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
@@ -31,14 +31,6 @@ def banner():
              {trang} ╚═════╝ ╚═════╝   ╚═╝     ╚════╝  ╚════╝  """
     print(banner)
     print(thanh)  # In thanh ra màn hình
-
-import requests
-from datetime import datetime
-import socket
-
-# Hàm lấy địa chỉ IP và kiểm tra tình trạng sống
-import requests
-from datetime import datetime
 
 # Hàm lấy địa chỉ IP và kiểm tra tình trạng sống
 def get_ip_status():
@@ -70,6 +62,11 @@ def show_key_info(key):
     
     print(f"{do}Tool đang update dự kiến sẽ là {trang}ngày 1-4-2025")
 
-# Chạy main function
+# Main function
+def main():
+    banner()  # Hiển thị banner
+    key = "SomeExampleKey"  # Giả sử bạn có một key nào đó
+    show_key_info(key)
+
 if __name__ == "__main__":
     main()
