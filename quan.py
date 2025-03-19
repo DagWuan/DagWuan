@@ -67,24 +67,7 @@ def show_key_info(key):
 ║ {trang}=> Trạng Thái IP: [{status}{trang}]           ║ 
 ╚════════════════════════════════════╝
 """)
-
-
-# Hàm kiểm tra key đã lưu
-def check_saved_key():
-    # Đây là hàm giả định để bạn kiểm tra xem key đã lưu trong hệ thống chưa
-    return "BDQ_1234567890123"  # Giả sử key hợp lệ
-
-# Main function
-def main():
-    os.system("cls" if os.name == "nt" else "clear")
-    banner()  # Hiển thị banner
-
-    # Kiểm tra nếu đã có key hợp lệ, bỏ qua nhập key
-    key = check_saved_key()  # Lấy key hợp lệ
-    if key:
-        show_key_info(key)  # Hiển thị thông tin key nếu có key hợp lệ
     
-    # Hiển thị thông báo cập nhật tool
     print(f"{do}Tool đang update dự kiến sẽ là {trang}ngày 1-4-2025")
 
 # Chạy main function
