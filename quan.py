@@ -61,6 +61,7 @@ def show_key_info(key):
 """)
     
     print(f"{do}Tool đang update dự kiến sẽ là {trang}ngày 1-4-2025")
+    print(f"{luc}Hãy lên YTb: DagWuan Share Tools để được cập nhật tools mới!!
 
 # Main function
 def main():
