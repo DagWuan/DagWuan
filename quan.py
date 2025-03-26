@@ -45,7 +45,7 @@ def get_ip_status():
         return 'Không xác định', 'die'
 
 # Hàm hiển thị thông tin key
-def show_key_info(key):
+def show_key_info():
     ip, status = get_ip_status()  # Lấy IP và trạng thái
     current_date = datetime.now().strftime("%d-%m-%Y")  # Lấy ngày hiện tại theo định dạng DD-MM-YYYY
 
@@ -62,3 +62,5 @@ def show_key_info(key):
     
     print(f"{do}Tool đang update dự kiến sẽ là {trang}ngày 1-4-2025")
     print(f"{do}Hãy lên YTb: {trang}DagWuan Share Tools để được cập nhật tools mới!!")
+    banner()
+    show_key_info()
