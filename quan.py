@@ -62,12 +62,3 @@ def show_key_info(key):
     
     print(f"{do}Tool đang update dự kiến sẽ là {trang}ngày 1-4-2025")
     print(f"{do}Hãy lên YTb: {trang}DagWuan Share Tools để được cập nhật tools mới!!")
-
-# Main function
-def main():
-    banner()  # Hiển thị banner
-    key = "SomeExampleKey"  # Giả sử bạn có một key nào đó
-    show_key_info(key)
-
-if __name__ == "__main__":
-    main()
