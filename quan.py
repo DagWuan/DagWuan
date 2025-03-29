@@ -12,13 +12,9 @@ trang = "\033[1;37m"
 ndp_tool = "\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=>  "
 thanh = "\033[1;37m- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 
-# Xóa màn hình
-def clear_screen():
-    os.system("cls" if os.name == "nt" else "clear")
-
 # Hiển thị banner
 def banner():
-    clear_screen()
+    os.system("cls" if os.name == "nt" else "clear")
     banner = f"""
                   {luc}© Bản Quyền BDQ09 ! Comming Soon !!!
                     
