@@ -41,7 +41,6 @@ def banner():
     print(f'''{thanh} {luc}Admin{trang}: {vang} Bùi Đăng Quân
 {thanh} {luc}Facebook{trang}: {red}https://www.facebook.com/DagWuan185?mibextid=ZbWKwL
 {thanh} {luc}Bạn Đang Sử Dụng Tool{trang}: {vang}Trao Đổi Sub Facebook VIP''')
-    thanhngang(65)
 def Delay(value):
 	while not(value <= 1):
 		value -= 0.123
