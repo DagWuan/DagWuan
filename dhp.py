@@ -3,6 +3,7 @@ from time import sleep
 from random import randint
 from datetime import datetime
 red = "\033[1;31m"
+do = "\033[1;31m"
 luc = "\033[1;32m"
 vang = "\033[1;33m"
 trang = "\033[1;37m"
@@ -37,11 +38,10 @@ def banner():
              {trang} ╚═════╝ ╚═════╝   ╚═╝     ╚════╝  ╚════╝  """
     print(banner)
     thanhngang(65)
-    print(f'''{thanh} {luc}Admin{trang}: {vang}Bùi Đăng Quân
-{thanh} {luc}Facebook: {trang}: {red}https://www.facebook.com/DagWuan185
+    print(f'''{thanh} {luc}Admin{trang}: {vang} Bùi Đăng Quân
+{thanh} {luc}Facebook{trang}: {red}https://www.facebook.com/DagWuan185?mibextid=ZbWKwL
 {thanh} {luc}Bạn Đang Sử Dụng Tool{trang}: {vang}Trao Đổi Sub Facebook VIP''')
     thanhngang(65)
-
 def Delay(value):
 	while not(value <= 1):
 		value -= 0.123
@@ -55,7 +55,6 @@ def Delay(value):
 		sleep(0)
 		print(f'''{trang}[{lam}BDQ09{trang}] [{lam}DELAY{trang}] [{lam}{str(value)[0:5]}{trang}] [    {vang}X{trang}]''', '               ', end = '\r')
 		sleep(0)
-
 def decode_base64(encoded_str):
 	decoded_bytes = base64.b64decode(encoded_str)
 	decoded_str = decoded_bytes.decode('utf-8')
