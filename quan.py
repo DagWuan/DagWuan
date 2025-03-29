@@ -28,7 +28,7 @@ def banner():
     print(thanh)  # In thanh ra màn hình
 
 # Hàm lấy địa chỉ IP và kiểm tra tình trạng sống
-def get_ip_status():
+def get_ip():
     try:
         ip = requests.get('https://api.ipify.org').text  # Lấy địa chỉ IP công cộng
         response = requests.get(f'https://www.google.com', timeout=5)  # Kiểm tra kết nối internet
@@ -41,7 +41,7 @@ def get_ip_status():
 
 # Hàm hiển thị thông tin key
 def show_key_info():
-    ip, status = get_ip_status()  # Lấy IP và trạng thái
+    ip, status = get_ip()  # Lấy IP và trạng thái
     current_date = datetime.now().strftime("%d-%m-%Y")  # Lấy ngày hiện tại theo định dạng DD-MM-YYYY
 
     print(f"""{luc}
