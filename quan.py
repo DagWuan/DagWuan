@@ -1,8 +1,6 @@
 import time
-from datetime import datetime, timedelta
-import sys
+from datetime import datetime
 import os
-import json
 import requests
 from pystyle import Colors, Colorate
 
@@ -15,13 +13,14 @@ ndp_tool = "\033[1;31m[\033[1;37m<>\033[1;31m] \033[1;37m=>  "
 thanh = "\033[1;37m- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 
 # Xóa màn hình
-os.system("cls" if os.name == "nt" else "clear")
+def clear_screen():
+    os.system("cls" if os.name == "nt" else "clear")
 
 # Hiển thị banner
 def banner():
-    os.system("cls" if os.name == "nt" else "clear")
+    clear_screen()
     banner = f"""
-                  {luc}© Bản Quyền BDQ09 ! Tool VIPBRO !!!
+                  {luc}© Bản Quyền BDQ09 ! Comming Soon !!!
                     
            {do}   ██████╗ ██████╗  ██████╗  █████╗  █████╗  
              {trang} ██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██╔══██╗ 
@@ -60,7 +59,9 @@ def show_key_info():
 ╚════════════════════════════════════╝
 """)
     
-    print(f"{do}Tool đang update dự kiến sẽ là {trang}ngày 1-4-2025")
+    print(f"{do}Tool đang update, {trang}có thông báo sẽ cập nhật trên YTB")
     print(f"{do}Hãy lên YTb: {trang}DagWuan Share Tools để được cập nhật tools mới!!")
-    banner()
-    show_key_info()
+    
+banner()
+show_key_info()
+print(thanh)
